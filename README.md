@@ -31,21 +31,21 @@ The goal is to predict house sale prices on the **Kaggle “House Prices – Adv
   - This is the strongest of the three classic models in my experiments.  
   - Includes evaluation metrics and residual/error plots.
 
-- `LightGBM – Literature Method 1.ipynb` *(name may vary)*  
-  - Implements **LGBMRegressor** based on the LightGBM paper.  
-  - Uses a small hyperparameter grid (n_estimators, learning_rate, num_leaves).  
-  - Compares LightGBM to the classic models.
+**Literature-Based Models: XGBoost and LightGBM**
 
-- `XGBoost – Literature Method 2.ipynb` *(name may vary)*  
+- `XGBoost – Literature Method 1.ipynb`  
   - Implements **XGBRegressor** inspired by the XGBoost paper / house-price paper.  
   - Tunes key parameters (n_estimators, learning_rate, max_depth, subsample, colsample_bytree).  
   - Achieves one of the best performances among all models.
 
-- (Optional) `KNN – extra method.ipynb`  
-  - Explores **KNN Regression** as an additional classic method.  
-  - Useful for comparison, even if it doesn’t outperform tree-based models.
+- `LightGBM – Literature Method 2.ipynb`  
+  - Implements **LGBMRegressor** based on the LightGBM paper.  
+  - Uses a small hyperparameter grid (n_estimators, learning_rate, num_leaves).  
+  - Compares LightGBM to the classic models.
 
-- `submission_example.ipynb` *(if you made one)*  
+
+
+- `submission_csv`  
   - Uses the best model to train on the full training data.  
   - Predicts on `test.csv` and creates `submission.csv` for Kaggle.
 
