@@ -15,6 +15,8 @@ The goal is to predict house sale prices on the **Kaggle “House Prices – Adv
 
 ### Notebooks
 
+**Classic Models: Ridge, Random Forest, and Gradient Boosting**
+
 - `Ridge regression – as Method 1.ipynb`  
   - Builds the preprocessing pipeline (imputation, one-hot encoding, scaling).  
   - Trains a **Ridge Regression** model.  
@@ -43,7 +45,7 @@ The goal is to predict house sale prices on the **Kaggle “House Prices – Adv
   - Uses a small hyperparameter grid (n_estimators, learning_rate, num_leaves).  
   - Compares LightGBM to the classic models.
 
-
+---
 
 - `submission_csv`  
   - Uses the best model to train on the full training data.  
