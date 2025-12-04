@@ -61,6 +61,16 @@ The goal is to predict house sale prices on the **Kaggle “House Prices – Adv
 
 ---
 
+- `Integrated Models.ipynb`  
+  - Reuses the common preprocessing pipeline (imputation, one-hot encoding, scaling) and applies it consistently across all models.  
+  - Trains or loads all regression models in one place: **Linear Regression**, **Ridge**, **Polynomial Ridge**, **Random Forest**, **Gradient Boosting**, **XGBoost**, and **LightGBM**.  
+  - Consolidates the validation metrics (R², RMSE, MAE, and within-10% accuracy) into a single comparison table for easy analysis.  
+  - Generates integrated visualizations, including:
+    - Actual vs Predicted plots for each model,  
+    - Combined Actual vs Predicted plot with all models,  
+    - Residual and error-based plots where relevant.  
+  - Serves as the main notebook used to support the **Results**, **Discussion**, and **Conclusion** sections of the report.
+
 - `submission_csv`  
   - Uses the best model to train on the full training data.  
   - Predicts on `test.csv` and creates `submission.csv` for Kaggle.
